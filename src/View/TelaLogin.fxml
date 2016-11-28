@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaLoginController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="340.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/images.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="89.0" layoutY="101.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="141.0" text="Senha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txEmail" layoutX="149.0" layoutY="97.0" prefHeight="25.0" prefWidth="171.0" promptText="Escreva seu email aqui" />
+      <Button fx:id="btEntrar" layoutX="128.0" layoutY="210.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" text="Entrar" />
+      <Button fx:id="idVoltar" layoutX="23.0" layoutY="22.0" mnemonicParsing="false" text="Voltar" />
+      <PasswordField fx:id="txSenha" layoutX="149.0" layoutY="139.0" prefHeight="25.0" prefWidth="171.0" promptText="Escreva sua senha aqui" />
+   </children>
+</AnchorPane>

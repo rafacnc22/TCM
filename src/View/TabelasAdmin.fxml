@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TabelasAdminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-2.0" prefHeight="477.0" prefWidth="612.0">
+         <children>
+            <Button fx:id="btExcluir" layoutX="505.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Excluir" />
+            <Button fx:id="btAlterar" layoutX="505.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Alterar" />
+            <Button fx:id="btVoltar" layoutX="505.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Voltar" />
+         </children>
+      </AnchorPane>
+      <TabPane layoutX="-2.0" layoutY="-2.0" prefHeight="529.0" prefWidth="474.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Relatar Desperdicio ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Tabela_Desperdicio" prefHeight="454.0" prefWidth="525.0">
+                           <columns>
+                              <TableColumn fx:id="Desperdicio_id" prefWidth="38.0" text="ID" />
+                              <TableColumn fx:id="Desperdicio_data" prefWidth="104.0" text="Data" />
+                              <TableColumn fx:id="Desperdicio_lugar" prefWidth="107.0" text="Lugar" />
+                              <TableColumn fx:id="Desperdcio_descriçao" prefWidth="220.0" text="Descrição" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btPDFDesperdicio" layoutX="14.0" layoutY="467.0" mnemonicParsing="false" text="Gerar PDF Relatar Desperdicos" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Relatar Ligações">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Tabela_Ligaçoes" prefHeight="457.0" prefWidth="470.0">
+                           <columns>
+                              <TableColumn fx:id="Ligaçoes_id" prefWidth="27.0" text="ID" />
+                              <TableColumn fx:id="Ligaçoes_data" prefWidth="104.0" text="Data" />
+                              <TableColumn fx:id="Ligaçoes_lugar" prefWidth="116.0" text="Lugar" />
+                              <TableColumn fx:id="Ligaçoes_descriçao" prefWidth="222.0" text="Descrição" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btPDFLigaçoes" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" text="Gerar PDF Relatar Ligações" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Relatar Problema">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Tabela_Problema" layoutX="-3.0" prefHeight="457.0" prefWidth="477.0">
+                           <columns>
+                              <TableColumn fx:id="Problema_id" prefWidth="41.0" text="ID" />
+                              <TableColumn fx:id="Problema_data" prefWidth="130.0" text="Data" />
+                              <TableColumn fx:id="Problema_lugar" prefWidth="104.0" text="Lugar" />
+                              <TableColumn fx:id="Problema_descriçao" prefWidth="199.0" text="Descrição" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btPDFProblema" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" text="Gerar PDF Relatar Problema" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Dicas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Tabela_Dica" prefHeight="456.0" prefWidth="470.0">
+                           <columns>
+                              <TableColumn fx:id="Dica_id" prefWidth="33.0" text="ID" />
+                              <TableColumn fx:id="Dica_email" prefWidth="170.0" text="Email" />
+                              <TableColumn fx:id="Dica_dica" prefWidth="266.0" text="Dica" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btPDFDicas" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" text="Gerar PDF Dicas" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Usuario">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="573.0">
+                     <children>
+                        <TableView fx:id="Tabela_Usuario" layoutX="4.0" prefHeight="455.0" prefWidth="466.0">
+                          <columns>
+                            <TableColumn fx:id="Coluna_ID" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="Coluna_Nome" prefWidth="112.0" text="Nome" />
+                              <TableColumn fx:id="Coluna_Email" prefWidth="139.0" text="Email" />
+                              <TableColumn fx:id="Coluna_Senha" prefWidth="137.0" text="Senha" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btPDFUsuario" layoutX="20.0" layoutY="461.0" mnemonicParsing="false" text="Gerar PDF Usuario" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

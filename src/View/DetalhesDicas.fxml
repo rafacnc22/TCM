@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="316.0" prefWidth="354.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.DetalhesDicasController">
+   <children>
+      <Label layoutX="29.0" layoutY="28.0" text="ID :" />
+      <Label fx:id="lbID" layoutX="62.0" layoutY="28.0" />
+      <Label layoutX="24.0" layoutY="67.0" text="Email :" />
+      <Label fx:id="lbEmail" layoutX="70.0" layoutY="67.0" />
+      <TextArea fx:id="txDescriçao" layoutX="81.0" layoutY="100.0" prefHeight="123.0" prefWidth="219.0" />
+      <Label layoutX="24.0" layoutY="100.0" text="Descriçao" />
+      <Button fx:id="btAlterar" layoutX="81.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Alterar" />
+      <Button fx:id="btCancelar" layoutX="177.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Cancelar" />
+   </children>
+</AnchorPane>

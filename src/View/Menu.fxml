@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Agua_poupar_agua.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="idRelatarProblema" layoutX="188.0" layoutY="40.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Relatar um Problema" />
+      <Button fx:id="idRelatarLigaçoes" layoutX="188.0" layoutY="89.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Relatar Ligações Clandestinas" />
+      <Button fx:id="idRelatarDesperdicio" layoutX="189.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Relatar Desperdicio de Água" />
+      <Button fx:id="idDicas" layoutX="188.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Dicas" />
+      <Button fx:id="idSair" layoutX="269.0" layoutY="329.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="63.0" text="Sair" />
+      <Button fx:id="btTabelas" layoutX="188.0" layoutY="234.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Tabelas" />
+      <Button fx:id="btGraficos" layoutX="189.0" layoutY="286.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="224.0" text="Graficos" />
+   </children>
+</AnchorPane>

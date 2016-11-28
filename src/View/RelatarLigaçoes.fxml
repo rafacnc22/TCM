@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RelatarLigaçoesController">
+    <children>
+      <ImageView fitHeight="456.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/water%201.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="62.0" layoutY="100.0" text="Onde ocorreu o Ligações" />
+      <Label layoutX="62.0" layoutY="131.0" text="Data que ocorreu" />
+      <Label layoutX="61.0" layoutY="164.0" text="Como ocorreu" />
+      <TextField fx:id="txOndeLigaçoes" layoutX="258.0" layoutY="96.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextArea fx:id="txComoLigaçoes" layoutX="258.0" layoutY="164.0" prefHeight="156.0" prefWidth="302.0" />
+      <DatePicker fx:id="dateLigaçoes" layoutX="258.0" layoutY="127.0" />
+      <Button fx:id="btRelatarLigaçoes" layoutX="260.0" layoutY="345.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="85.0" text="Relatar" />
+      <Button fx:id="btCancelar" layoutX="369.0" layoutY="345.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="85.0" text="Cancelar" />
+      <Button fx:id="idVoltar" layoutX="24.0" layoutY="354.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>
